@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import MenuBar from "../../assets/menu.svg";
+import CloseBar from "../../assets/close.svg";
 
 import "./NavBar.scss";
 
@@ -57,21 +58,7 @@ export function NavBar() {
                onClick={() => setMenuMobile(!menuMobile)}
             >
                <img className="iconOpen" src={MenuBar} alt="Ícone do menu" />
-               <svg
-                  className="iconClose"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 40 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-               >
-                  <path
-                     d="M30 10L10 30M10 10L30 30"
-                     strokeWidth="2"
-                     strokeLinecap="round"
-                     strokeLinejoin="round"
-                  ></path>
-               </svg>
+               <img className="iconClose" src={CloseBar} alt="Ícone do menu" />
             </li>
          </ul>
       </nav>

@@ -21,6 +21,7 @@ body {
       -webkit-transition: all 0.5s ease-in-out;
 
       overflow: hidden;
+
       ul {
          transition: all 0.5s ease-in-out;
       }
@@ -29,18 +30,13 @@ body {
       }
       li.threeline-icon {
          display: inline-block;
-         .iconOpen {
-            display: inline-block;
-            fill: var(--color-white);
-            &:hover {
-               fill: var(--color-blue-300);
-            }
-         }
+
          .iconClose {
             display: none;
          }
       }
    }
+
    .menuMobile {
       height: 31rem;
 
@@ -61,24 +57,13 @@ body {
          .iconOpen {
             display: none;
          }
+
          .iconClose {
             margin-top: 1.5rem;
             display: inline-block;
-            stroke: var(--color-white);
+
             transition: all 0.5s ease-in-out;
-            &:hover {
-               stroke: var(--color-blue-300);
-            }
          }
       }
-   }
-
-   .main__box {
-      max-width: 100%;
-      background-size: auto 100%;
-   }
-
-   .main__blackbox {
-      opacity: 0.8;
    }
 }
