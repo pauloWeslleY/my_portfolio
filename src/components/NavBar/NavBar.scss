@@ -1,0 +1,61 @@
+//! TODO: Navigation Style <=| === === === ===
+.navigation {
+   color: var(--white);
+   height: 5rem;
+
+   animation: Navigation 4s;
+
+   ul {
+      text-align: right;
+      list-style: none;
+
+      margin-top: 0;
+      padding-left: 0;
+
+      height: 5rem;
+   }
+
+   li {
+      display: inline-block;
+
+      padding-left: 3rem;
+      padding-right: 3rem;
+      line-height: 5rem;
+
+      font-size: 1.8rem;
+      font-weight: 300;
+   }
+
+   a {
+      text-decoration: none;
+      color: var(--white);
+
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+         color: var(--blue-300);
+      }
+   }
+
+   li.threeline-icon {
+      display: none;
+
+      &:hover {
+         color: var(--blue-300);
+         cursor: pointer;
+      }
+   }
+}
+
+@keyframes Navigation {
+   0% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+/*HACK: End Style Navigation <=| === === === === */

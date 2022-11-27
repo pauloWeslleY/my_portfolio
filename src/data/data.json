@@ -1,0 +1,55 @@
+{
+   "home": {
+      "title": "Weslley",
+      "subtitle": "De Lima Firmino",
+      "description": "Developer Web Front-End Jr - HTML5 - CSS3 - JS - SCSS - TS - ReactJs - Chakra-UI",
+      "imageUrl": "/images/profile.png",
+      "alt": "Foto do Site"
+   },
+   "about": {
+      "title": "Sobre Mim",
+      "subtitle": "Dados Pessoais",
+      "dataPerson": {
+         "name_title": "Name",
+         "name": "Paulo Weslley de Lima Firmino",
+         "birthDate_title": "Data de Nascimento",
+         "birthDate": "13 de Dezembro de 1998",
+         "residence": "Residência",
+         "country": "São Paulo, Brasil",
+         "languages_title": "Idiomas",
+         "languages1": "Português (Nativo)",
+         "languages2": "Inglês (iniciante)"
+      },
+      "description": "Me chamo Paulo Weslley, nasci em Tabatinga/AM, sou formado em Web Design pela Udemy e atualmente estou estudando Desenvolvimento Web Front-End com foco em ReactJS.",
+      "description1": "Em 2018, por interesse próprio comecei a estudar desenvolvimento na web pra conhecer a área, trabalho com construção de sites e aplicações web por conta própria, já trabalhei em alguns projetos como o desenvolvimento do site de uma clínica de Acupuntura e do site da Empresa Karson Serralheria, possuo conhecimentos básicos em HTML5, CSS3, SASS, JS, TS, Bootstrap, Materialize, GitHub, ReactJS. Em 2016 completei o ensino médio, já cursei também Guia Turístico na Instituição AlfaSol em 2017 atualmente sou Front-End Developer Jr.",
+      "description2": "Eu tenho um desenvolvimento rápido. No meu tempo livre eu estudo inglês, gosto de praticar esporte principalmente o futebol.",
+      "education": "Educação",
+      "courses": {
+         "title": "Cursos em Andamento",
+         "course": "Front-End profissional completo - Udemy (Brasil)",
+         "course1": "JavaScript - Curso COMPLETO - Udemy (Brasil)",
+         "date1": "27 de Maio 2018",
+         "course_finish": "Web Design - Udemy (Brasil)",
+         "date2": "21 de Maio 2019",
+         "course_finish1": "Desenvolvedor Web - Udemy (Brasil)"
+      },
+      "skillsTitle": "Minhas Skills",
+      "skillsSubTitle": "Stack Front End",
+      "skillList": {
+         "html": "HTML5",
+         "css": "CSS3",
+         "sass": "Sass",
+         "js": "JavaScript",
+         "ts": "TypeScript",
+         "bs": "Bootstrap",
+         "react": "ReactJS",
+         "chakra": "Chakra-UI",
+         "git": "GitHub"
+      },
+      "experienceWork": "Experiência de Trabalho",
+      "experienceDate1": "2018-2019",
+      "experienceDescription1": "Desenvolvimento do WebSite da Clínica de Acupuntura",
+      "experienceDate2": "2020",
+      "experienceDescription2": "Desenvolvimento do WebSite da Serralheria"
+   }
+}

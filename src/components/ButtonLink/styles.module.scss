@@ -1,0 +1,21 @@
+.button__link {
+   display: flex;
+   align-items: center;
+
+   width: 15rem;
+   padding-block: 1.5rem;
+
+   color: var(--gray-100);
+   text-decoration: none;
+
+   transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
+
+   &:active,
+   &:focus,
+   &:hover {
+      color: var(--blue-100);
+      filter: brightness(0.9);
+   }
+}

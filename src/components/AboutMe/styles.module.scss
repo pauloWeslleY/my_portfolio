@@ -1,0 +1,93 @@
+.hero__about_container {
+   display: flex;
+   flex-direction: column;
+
+   h2 {
+      text-transform: uppercase;
+      font-weight: normal;
+      color: var(--white);
+
+      font-size: 2.2rem;
+
+      margin-block: 1.5rem;
+   }
+
+   h3 {
+      text-transform: uppercase;
+      color: var(--blue-100);
+
+      font-size: 1.5rem;
+      font-weight: 400;
+
+      padding-block: 1.5rem;
+   }
+
+   p {
+      text-align: justify;
+
+      color: var(--white);
+
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 3.5rem;
+   }
+
+   .hero__about {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .hero__about_image {
+         width: 25rem;
+         height: 25rem;
+         background-image: url("/images/user.jpg");
+         background-size: cover;
+         border-radius: 50%;
+         border: 0.1rem solid var(--blue-300);
+      }
+   }
+
+   .hero__description {
+      h3 {
+         font-size: 2rem;
+         font-weight: 500;
+
+         margin-bottom: 1.5rem;
+
+         letter-spacing: 0.4rem;
+         color: var(--white);
+      }
+
+      p {
+         color: var(--white);
+
+         font-size: 1.6rem;
+         font-weight: 300;
+         line-height: 3.5rem;
+         text-align: justify;
+      }
+   }
+
+   .hero__about_skills {
+      ul {
+         color: var(--white);
+
+         font-size: 1.8rem;
+         font-weight: 300;
+
+         list-style: none;
+         line-height: 3rem;
+      }
+   }
+
+   hr {
+      margin-block: 2.5rem;
+   }
+}
+
+@media (max-width: 1000px) {
+   .hero__about {
+      flex-direction: column;
+      align-items: flex-start !important;
+   }
+}

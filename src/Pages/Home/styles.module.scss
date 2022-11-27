@@ -1,0 +1,85 @@
+//[]  Hero Style  **********/
+.profile__front_hero {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   flex-wrap: wrap;
+
+   height: 94vh;
+
+   color: var(--white);
+
+   section {
+      display: flex;
+      gap: 0.5rem;
+   }
+
+   .profile__picture {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-basis: 40%;
+
+      animation-name: Profile__hero;
+      animation-duration: 2s;
+
+      img {
+         width: 32rem;
+         border-radius: 32rem;
+      }
+   }
+
+   .profile__title {
+      justify-content: center;
+      flex-direction: column;
+      flex-basis: 60%;
+
+      animation-name: Title__hero;
+      animation-duration: 2s;
+
+      h1 {
+         text-transform: uppercase;
+
+         font-size: 5rem;
+         font-weight: 500;
+
+         line-height: 5.5rem;
+
+         span {
+            font-weight: 300;
+
+            color: var(--blue-300);
+         }
+      }
+
+      h2 {
+         font-size: 2.1rem;
+         font-weight: 300;
+      }
+   }
+}
+
+@keyframes Title__hero {
+   0% {
+      opacity: 0;
+      transform: translate(0px, -20px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translate(0px, 0px);
+   }
+}
+
+@keyframes Profile__hero {
+   0% {
+      opacity: 0;
+      transform: translate(0px, 20px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translate(0px, 0px);
+   }
+}
