@@ -1,63 +1,10 @@
-import { FaHtml5 } from "react-icons/fa";
-import { DiCss3Full, DiSass } from "react-icons/di";
-import { FaCss3 } from "react-icons/fa";
-import {
-   SiTypescript,
-   SiReact,
-   SiChakraui,
-   SiJavascript,
-} from "react-icons/si";
-import { BsBootstrapFill, BsGithub } from "react-icons/bs";
 import { about } from "../../data/data.json";
+import { ButtonLink } from "../ButtonLink/ButtonLink";
+import { SKILLS } from "./[about_skills]";
 
 import styles from "./styles.module.scss";
-import { ButtonLink } from "../ButtonLink/ButtonLink";
-
-interface SkillsProps {
-   label: string;
-   icon: any;
-}
 
 export function AboutMe() {
-   const SKILLS: Array<SkillsProps> = [
-      {
-         icon: <FaHtml5 />,
-         label: about.skillList.html,
-      },
-      {
-         icon: <FaCss3 />,
-         label: about.skillList.css,
-      },
-      {
-         icon: <DiSass />,
-         label: about.skillList.sass,
-      },
-      {
-         icon: <SiJavascript />,
-         label: about.skillList.js,
-      },
-      {
-         icon: <SiTypescript />,
-         label: about.skillList.ts,
-      },
-      {
-         icon: <BsBootstrapFill />,
-         label: about.skillList.bs,
-      },
-      {
-         icon: <SiReact />,
-         label: about.skillList.react,
-      },
-      {
-         icon: <SiChakraui />,
-         label: about.skillList.chakra,
-      },
-      {
-         icon: <BsGithub />,
-         label: about.skillList.git,
-      },
-   ];
-
    return (
       <section className={styles.hero__about_container}>
          <h2>{about.subtitle}</h2>
