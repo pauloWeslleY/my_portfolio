@@ -5,8 +5,8 @@
 
 ### Tecnologia utilizadas no desenvolvimento do site
 
+- Vite
 - ReactJs
-- NextJs
 - Typescript
 - Sass
 - Yarn
