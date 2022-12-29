@@ -16,4 +16,4 @@ yarn dev
 ```
 ## Para acessar o site
 
-**[WEslley De Lima](https://weslleywebdesign.vercel.app)**
+**[Weslley De Lima](https://weslleywebdesign.vercel.app)**
