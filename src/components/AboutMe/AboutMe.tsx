@@ -23,6 +23,7 @@ export function AboutMe() {
                <p>{about.dataPerson.country}</p>
                <h3>{about.dataPerson.languages_title}</h3>
                <p>{about.dataPerson.languages1}</p>
+               <p>{about.dataPerson.languages2}</p>
             </section>
          </section>
 

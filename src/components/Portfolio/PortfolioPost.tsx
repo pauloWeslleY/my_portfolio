@@ -3,17 +3,19 @@ import { PortfolioProps } from "../../@types/PortfolioProps";
 
 import styles from "./styles.module.scss";
 
-export function PortfolioPost({
-   title,
-   description,
-   imageUrl,
-}: PortfolioProps) {
+interface PortfolioPostProps {
+   posts: PortfolioProps;
+}
+
+export function PortfolioPost({ posts }: PortfolioPostProps) {
+   const { title, description, imageUrl, path } = posts;
+
    return (
-      <section
+      <article
          className={styles.portfolio__container}
-         style={{ backgroundImage: "url(" + imageUrl + ")" }}
+         style={{ backgroundImage: `url(${imageUrl})` }}
       >
-         <Link to={`/${title}`}>
+         <Link to={`/${path}`}>
             <div className={styles.portfolio__blackbox}>
                <div className={styles.portfolio__blackbox_text}>
                   <h2>{title}</h2>
@@ -21,6 +23,6 @@ export function PortfolioPost({
                </div>
             </div>
          </Link>
-      </section>
+      </article>
    );
 }

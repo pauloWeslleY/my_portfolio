@@ -21,7 +21,7 @@
          height: 32rem;
          background-color: var(--black);
          opacity: 0;
-         transition: 1s;
+         transition: all 1s ease-in-out;
          display: flex;
          align-items: center;
          justify-content: center;
@@ -46,6 +46,7 @@
 
             span {
                font-weight: 300;
+               font-size: 2.5rem;
 
                color: var(--white);
             }
@@ -63,4 +64,11 @@
          opacity: 0.8 !important;
       }
    }
+}
+
+.container__posts {
+   display: flex;
+   flex-direction: row;
+   gap: 0.7rem;
+   justify-content: center;
 }

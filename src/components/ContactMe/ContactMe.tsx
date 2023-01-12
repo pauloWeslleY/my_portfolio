@@ -1,14 +1,15 @@
+import { ReactElement } from "react";
 import { BsGithub, BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
-import { contact } from "../../data/contact_[data].json";
+import { contact } from "../../data/data.json";
 
 import styles from "./styles.module.scss";
 
 interface SocialProps {
    link: string;
-   icon: any;
+   icon: ReactElement;
 }
 
 export function ContactMe() {
@@ -19,7 +20,7 @@ export function ContactMe() {
       },
       {
          icon: <BsLinkedin />,
-         link: "https://www.linkedin.com/in/paulo-weslley-17851a17b/",
+         link: "https://www.linkedin.com/in/paulo-weslley-de-lima-firmino-17851a17b/",
       },
       {
          icon: <BsGithub />,

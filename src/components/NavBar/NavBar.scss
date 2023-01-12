@@ -13,17 +13,21 @@
       padding-left: 0;
 
       height: 5rem;
-   }
 
-   li {
-      display: inline-block;
+      li {
+         display: inline-block;
 
-      padding-left: 3rem;
-      padding-right: 3rem;
-      line-height: 5rem;
+         padding-inline: 3rem;
+         line-height: 6rem;
 
-      font-size: 1.8rem;
-      font-weight: 300;
+         font-size: 1.8rem;
+         font-weight: 300;
+
+         &.threeline-icon {
+            display: none;
+            cursor: pointer;
+         }
+      }
    }
 
    a {
@@ -34,15 +38,6 @@
 
       &:hover {
          color: var(--blue-300);
-      }
-   }
-
-   li.threeline-icon {
-      display: none;
-
-      &:hover {
-         color: var(--blue-300);
-         cursor: pointer;
       }
    }
 }
@@ -59,3 +54,77 @@
    }
 }
 /*HACK: End Style Navigation <=| === === === === */
+
+//[] === === === === === === === === ===|=> Responsive Mobile <=|=== === === === === === === === ===
+@media (max-width: 1000px) {
+   .navigation {
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+
+      overflow: hidden;
+
+      ul {
+         transition: all 0.5s ease-in-out;
+
+         li {
+            display: none;
+
+            &.threeline-icon {
+               display: inline-block;
+               padding-top: 1rem;
+
+               .iconOpen {
+                  transition: all 0.5s ease-in-out;
+
+                  &:focus,
+                  &:active {
+                     color: var(--white);
+                  }
+
+                  &:hover {
+                     color: var(--blue-300);
+                  }
+               }
+
+               .iconClose {
+                  display: none;
+               }
+            }
+         }
+      }
+   }
+
+   .menuMobile {
+      height: 30rem;
+
+      ul {
+         text-align: center;
+         padding-inline: 15%;
+
+         li {
+            display: block;
+            border-bottom: solid var(--gray-100) 0.1rem;
+            width: 100%;
+            padding: 0;
+
+            &.threeline-icon {
+               .iconOpen {
+                  display: none;
+               }
+
+               .iconClose {
+                  display: inline-block;
+                  color: var(--white);
+
+                  transition: all 0.5s ease-in-out;
+
+                  &:hover {
+                     color: var(--blue-300);
+                  }
+               }
+            }
+         }
+      }
+   }
+}

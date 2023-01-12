@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 
 interface ButtonLinkProps {
    title: string;
-   path: any;
+   path: string;
 }
 
 export function ButtonLink({ title, path }: ButtonLinkProps) {

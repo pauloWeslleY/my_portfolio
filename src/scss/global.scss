@@ -1,69 +1,25 @@
-@import "variables";
+@use "variables";
 
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    text-decoration: none;
+
+   ::-webkit-scrollbar {
+      width: 1rem;
+   }
+   ::-webkit-scrollbar-track {
+      background: variables.$gray-100;
+   }
+   ::-webkit-scrollbar-thumb {
+      background: variables.$blue-100;
+      border-radius: 2.4rem;
+   }
 }
 
 body {
-   background-color: var(--gray-200);
+   background-color: variables.$gray-400;
    font-size: 1.6rem;
    font-family: "Montserrat", sans-serif;
-}
-
-//[] === === === === === === === === ===|=> Responsive Mobile <=|=== === === === === === === === ===
-@media (max-width: 1000px) {
-   .navigation {
-      transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -webkit-transition: all 0.5s ease-in-out;
-
-      overflow: hidden;
-
-      ul {
-         transition: all 0.5s ease-in-out;
-      }
-      li {
-         display: none;
-      }
-      li.threeline-icon {
-         display: inline-block;
-
-         .iconClose {
-            display: none;
-         }
-      }
-   }
-
-   .menuMobile {
-      height: 31rem;
-
-      ul {
-         transition: all 0.5s ease-in-out;
-         height: auto;
-         text-align: center;
-         padding-right: 15%;
-         padding-left: 15%;
-      }
-      li {
-         display: block;
-         border-bottom: solid grey 0.1rem;
-         width: 100%;
-         padding: 0;
-      }
-      li.threeline-icon {
-         .iconOpen {
-            display: none;
-         }
-
-         .iconClose {
-            margin-top: 1.5rem;
-            display: inline-block;
-
-            transition: all 0.5s ease-in-out;
-         }
-      }
-   }
 }

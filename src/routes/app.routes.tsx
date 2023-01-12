@@ -5,6 +5,8 @@ import Works from "../Pages/Works/Works";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 
+import { NavBar } from "../components/NavBar/NavBar";
+
 import { Acupuntura } from "../components/pages/Acupuntura/Acupuntura";
 import { Serralheria } from "../components/pages/Serralheria/Serralheria";
 import { Orquidario } from "../components/pages/Orquidario/Orquidario";
@@ -17,6 +19,8 @@ import { Restaurants } from "../components/pages/Restaurants/Restaurants";
 export function AppRoutes() {
    return (
       <BrowserRouter>
+         <NavBar />
+
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/works" element={<Works />} />
